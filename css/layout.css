@@ -1,0 +1,169 @@
+/* If it's vertical, you set justify-content.
+ If it's horizontal, you set align-items. */
+
+html, body{
+  margin: 0;
+}
+ .menu {
+  position: sticky;
+  width:auto;
+  /* height:100vh; */
+  /* display: none; */
+  background-color: rgba(black, black, black, 1);
+  top: 0;
+  
+}
+
+.fixedpos {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    
+    z-index: 5 ;
+    width: 100vw;
+}
+
+.main-section {
+  height: calc(100vh + 30px);
+  display:flex;
+  margin-top: -60px;
+  padding: 17px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  height: auto;
+  display:flex;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  background-color: red;
+  width: 70%;
+  
+  
+}
+/* __________LAYOUT__________ */
+/* __________ROWS__________ */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.centered-h {
+  display: flex;
+  justify-content: center;
+}
+
+.centered-v {
+  align-items: center;
+}
+
+.centered-h2 {
+  align-self: center;
+  text-align: center;
+}
+
+/* __________COLUMNS__________ */
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-1 {
+  flex:1;
+}
+
+.f-2 {
+  flex:2;
+}
+
+.f-3 {
+  flex:3;
+}
+
+.f-4 {
+  flex:4;
+}
+
+/* __________HEIGHT__________ */
+.h-1 {
+  height:15em;
+}
+
+.h-2 {
+  height:20em;
+}
+
+.h-3 {
+  height: 30em;
+}
+
+/* __________WIDTH__________ */
+.half-width {
+  height: 50%;
+}
+
+.max-width {
+  width: 100%;
+}
+
+@media all and (max-width: 500px) { 
+  .row {
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .col {
+    margin:0px;
+    padding:0em;
+    flex: 0 0 auto;
+    align-self: auto;
+  }
+  .centered-sm {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fs-1 {
+    font-size:1em !important;
+  }
+
+  #sub1 {
+    width: 100% !important;;
+  }
+
+  #Anthony {
+    font-size:3em;
+  }
+
+  #about-title {
+    padding-right:0px !important;
+  }
+
+  p {
+    font-size:14px;
+  }
+}
