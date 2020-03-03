@@ -19,6 +19,10 @@
   background-color: rgb(128, 171, 226);
 }
 
+.b-none {
+  background-color: none;
+}
+
 .white {
   color:rgb(233, 233, 233);
 }
@@ -26,6 +30,18 @@
 .white2 {
   color:rgb(167, 167, 167);
   
+}
+
+.blue {
+  color: blue;
+}
+
+.blend {
+  mix-blend-mode: exclusion;
+}
+
+.obj-c { 
+  object-fit: contain;
 }
 
 /* __________TEXT__________ */
@@ -42,8 +58,8 @@
   font-size: 4em;
 }
 
-.fs-25 {
-  font-size: 25em;
+.fs-15 {
+  font-size: 15em;
 }
 
 .fw-1 {
